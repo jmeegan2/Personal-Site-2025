@@ -24,8 +24,22 @@
             font-family: 'EB Garamond', 'Old Standard TT', 'Roboto', serif;
             color: #444;
             position: relative;
-            box-shadow: 0 1px 8px rgba(60,60,60,0.07);
-            border-radius: 2px;
+            /* Subtle paper texture using SVG data URI */
+            background-image: url('data:image/svg+xml;utf8,<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="60" fill="%23f8f6f2"/><circle cx="30" cy="30" r="0.5" fill="%23e5e3dd"/><circle cx="10" cy="50" r="0.5" fill="%23e5e3dd"/><circle cx="50" cy="10" r="0.5" fill="%23e5e3dd"/><circle cx="40" cy="40" r="0.5" fill="%23e5e3dd"/><circle cx="20" cy="20" r="0.5" fill="%23e5e3dd"/></svg>');
+            background-size: 120px 120px;
+            border-radius: 3px;
+            box-shadow: 0 2px 16px 2px rgba(60,60,60,0.13), 0 0 0 1.5px #e0dfdb inset;
+            border: 1.5px solid #e0dfdb;
+            overflow: hidden;
+        }
+        .card-container:after {
+            /* Simulate a subtle edge highlight for realism */
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 3px;
+            pointer-events: none;
+            box-shadow: 0 0 0 2px rgba(255,255,255,0.13) inset;
         }
         .top-left {
             position: absolute;
