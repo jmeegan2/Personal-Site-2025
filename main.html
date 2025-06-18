@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James Meegan | Business Card</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Crimson+Text:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             background: #d6d3c9;
@@ -21,7 +21,7 @@
             height: 200px;
             box-sizing: border-box;
             padding: 28px 36px 14px 36px;
-            font-family: 'Crimson Text', 'Cardo', serif;
+            font-family: 'EB Garamond', 'Old Standard TT', 'Roboto', serif;
             color: #444;
             position: relative;
             box-shadow: 0 1px 8px rgba(60,60,60,0.07);
@@ -45,8 +45,7 @@
             color: #444;
         }
         .company {
-            font-family: 'Crimson Text', 'Cardo', serif;
-            font-size: 1.08rem;
+            font-size: 18px;
             font-variant: small-caps;
             font-weight: 700;
             letter-spacing: 0.08em;
@@ -59,15 +58,14 @@
             text-align: center;
         }
         .name {
-            font-family: 'Crimson Text', 'Cardo', serif;
-            font-size: 1.22rem;
+            font-size: 20px;
             font-variant: small-caps;
             font-weight: 700;
             letter-spacing: 0.08em;
             margin-bottom: 0.18em;
         }
         .title {
-            font-size: 1.01rem;
+            font-size: 15px;
             font-variant: small-caps;
             color: #444;
             letter-spacing: 0.06em;
@@ -81,13 +79,14 @@
         }
         .address {
             position: absolute;
-            left: 36px;
-            right: 36px;
-            bottom: 12px;
+            right: 15px;
+            bottom: 10px;
             font-size: 0.85rem;
-            color: #888;
-            text-align: center;
+            color: #111;
+            text-align: right;
             letter-spacing: 0.04em;
+            font-family: 'EB Garamond', 'Old Standard TT', 'Roboto', serif;
+            white-space: nowrap;
         }
         @media (max-width: 500px) {
             .card-container {
@@ -95,7 +94,8 @@
                 height: 150px;
                 padding: 8px 4vw 6px 4vw;
             }
-            .top-left, .top-right, .address { left: 4vw; right: 4vw; }
+            .top-left, .top-right { left: 4vw; right: 4vw; }
+            .address { right: 4vw; left: auto; font-size: 0.75rem; }
         }
     </style>
 </head>
@@ -107,10 +107,10 @@
         </div>
         <div class="center">
             <div class="name">James Patrick Meegan</div>
-            <div class="title">Full-Stack Software Engineer</div>
-            <div class="email">jmeegan8@gmail.com</div>
+            <div class="title">Software Developer</div>
+            <!-- <div class="email">jmeegan8@gmail.com</div> -->
         </div>
-        <div class="address">Austin, TX</div>
+        <div class="address">Austin, TX &middot; Cell: 443 987 4911 &middot; Email: jmeegan8@gmail.com</div>
     </div>
 </body>
 </html>
